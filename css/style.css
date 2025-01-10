@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+body{
+    background: url("../img/Portfolio_Background.gif") no-repeat fixed center;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    margin: 0 auto;
+}
+.apps-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+.app{
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin: 30px 30px;
+    cursor: pointer;
+}
+.taskbar{
+    max-height: fit-content;
+    padding: 10px 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgb(44, 44, 47, .8);
+}
+.app-box{
+    cursor: pointer;
+    text-align: center;
+    font-size: 0.8em;
+}
+#date-time{
+    text-align: center;
+}
+#current-date, #current-time{
+    font-size: 2em;
+    margin: 5px 0;
+}
