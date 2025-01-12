@@ -1,15 +1,15 @@
 function updateDateTime(){
-    const now = new Date();
-
-    const dateString = now.toLocaleString();
-    const timeString = now.toLocaleString();
-
-    document.getElementById("current-date").textContent = dateString;
-    document.getElementById("current-time").textContent = timeString;
+    const date = new Date();
+    
+    const dateString = date.toDateString();
+    const timeString = date.toLocaleTimeString();
+    
+    document.getElementById("current-date").innerHTML = dateString;
+    document.getElementById("current-time").innerHTML = timeString;
 }
 
-//Update te date and time every second 
+//Updates the time and date every second 
 setInterval(updateDateTime, 1000);
 
-//Call to display the date and time immediately on the load
+//Display the time and date every second or update 
 updateDateTime();
